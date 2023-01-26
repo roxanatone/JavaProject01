@@ -33,15 +33,15 @@ public class HandlingFiles {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		System.out.println(" --- WELCOME TO HANDLING FILES APPLICATION --- ");
+		System.out.println(" WELCOME TO HANDLING FILES APPLICATION ");
 		System.out.println("Developer: Tone Ioana Roxana");
 		System.out.println("Choose your option from the following menu:");
-		System.out.println("1. Return the current filenames in ascending order -> enter ASC");
-		System.out.println("2. Add a user specified file in the directory list -> enter ADD");
-		System.out.println("3. Delete a user specified file from the directory list -> enter DELETE");
-		System.out.println("4. Search a user specified file from the main directory -> enter SEARCH");
+		System.out.println("1. Return the current filenames in ascending order - enter ASC");
+		System.out.println("2. Add a user specified file in the directory list - enter ADD");
+		System.out.println("3. Delete a user specified file from the directory list - enter DELETE");
+		System.out.println("4. Search a user specified file from the main directory - enter SEARCH");
 		System.out.println("5. Close the application -> enter CLOSE");
-		System.out.println(" --- YOUR OPTION IS --- ");
+		System.out.println(" YOUR OPTION IS ");
 
 		Scanner scan = new Scanner(System.in);
 
@@ -50,7 +50,7 @@ public class HandlingFiles {
 
 		switch (chosenOption) {
 		case "ASC":
-			System.out.println(" ||| SORTING THE FILENAMES IN ASCENDING ORDER IN THE USER SPECIFIED DIRECTORY ||| ");
+			System.out.println(" SORTING THE FILENAMES IN ASCENDING ORDER IN THE USER SPECIFIED DIRECTORY ");
 			Scanner readerAsc = new Scanner(System.in);
 			boolean successAsc = false;
 			System.out.println("Enter path of directory which will be sorted:");
@@ -66,7 +66,7 @@ public class HandlingFiles {
 			readerAsc.close();
 			break;
 		case "ADD":
-			System.out.println(" ||| ADDING A NEW FILE TO A USER SPECIFIED DIRECTORY ||| ");
+			System.out.println(" ADDING A NEW FILE TO A USER SPECIFIED DIRECTORY ");
 			Scanner reader = new Scanner(System.in);
 			boolean success = false;
 			System.out.println("Enter path of directory where the file will be created:");
@@ -89,7 +89,7 @@ public class HandlingFiles {
 			reader.close();
 			break;
 		case "DELETE":
-			System.out.println("||| DELETING A FILE FROM A SPECIFIED DIRECTORY |||");
+			System.out.println(" DELETING A FILE FROM A SPECIFIED DIRECTORY ");
 			Scanner reader2 = new Scanner(System.in);
 			System.out.println("Enter path of directory from where the file will be deleted:");
 			String dir2 = reader2.nextLine();
@@ -108,7 +108,7 @@ public class HandlingFiles {
 			reader2.close();
 			break;
 		case "SEARCH":
-			System.out.println("||| SEARCHING FOR A FILE FROM A SPECIFIED DIRECTORY |||");
+			System.out.println(" SEARCHING FOR A FILE FROM A SPECIFIED DIRECTORY ");
 			Scanner reader3 = new Scanner(System.in);
 			System.out.println("Enter path of directory where the file will be searched:");
 			String dir3 = reader3.nextLine();
@@ -119,7 +119,7 @@ public class HandlingFiles {
 			reader3.close();
 			break;
 		case "CLOSE":
-			System.out.println(" --- APPLICATION CLOSED --- ");
+			System.out.println(" APPLICATION CLOSED ");
 			System.exit(0);
 			break;
 		default:
